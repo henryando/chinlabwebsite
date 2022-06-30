@@ -1,0 +1,262 @@
+/* Change all fonts to Helvetica */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+th {
+    font-family: Helvetica, sans-serif;
+    text-align: center;
+}
+
+.site-branding {
+    font-family: Helvetica, sans-serif;
+}
+
+body {
+    font-family: Helvetica, sans-serif;
+}
+
+.site-slogan {
+    font-family: Helvetica, sans-serif;
+}
+
+.close-mobile-menu {
+    font-family: Helvetica, sans-serif;
+}
+
+.primary-menu-wrapper {
+    font-family: Helvetica, sans-serif;
+}
+
+ul.main-menu {
+    font-family: Helvetica, sans-serif;
+}
+
+.breadcrumb {
+    font-family: Helvetica, sans-serif;
+}
+
+.sidebar {
+    font-family: Helvetica, sans-serif;
+    text-align: center;
+    
+}
+
+.icon-box,
+.icon-box2 {
+    font-family: Helvetica, sans-serif !important;
+}
+
+.accordion-title,
+.toggle-title {
+    font-family: Helvetica, sans-serif;
+}
+
+
+/* Table formatting things, including groupmeeting table */
+
+th,
+tr,
+td {
+    text-align: left;
+}
+
+th.grpmtg {
+    text-align: right;
+    color: var(--theme-color-two);
+    font-weight: normal;
+    width: 25%;
+}
+
+table.grpmtg,
+tr.grpmtg,
+th.grpmtg,
+td.grpmtg {
+    border: none;
+    background: var(--body-bg);
+}
+
+/* Link style */
+
+a:hover {
+    color: var(--link-hover);
+    text-decoration: underline;
+}
+
+a:active,
+a:hover,
+a:focus {
+    text-decoration: none;
+    border: 0;
+    outline: 0;
+    text-decoration: underline;
+}
+
+/* Remove margin between paragraphs  */
+
+p {
+    margin: 0 0 0em 0;
+}
+
+/* Make all header fonts just a bit bigger  */
+
+h1 {
+    font-size: 2.5em;
+}
+
+h2 {
+    font-size: 2.25em;
+}
+
+h3 {
+    font-size: 2.0em;
+}
+
+h4 {
+    font-size: 1.75em;
+}
+
+h5 {
+    font-size: 1.5em;
+}
+
+h6 {
+    font-size: 1.25em;
+}
+
+/* Define img classes for the people section  */
+
+/* For peoples faces */
+img.ppl {
+    width: 15em;
+    height: 15em;
+    object-fit: cover;
+}
+
+/* For favorite figures */
+img.fav {
+    width: 15em;
+    height: 15em;
+    object-fit: cover;
+}
+
+/* Remove the ugly border between menu items  */
+
+ul.main-menu ul.submenu li {
+    border-top: none !important
+}
+
+
+/* Elements -> Accordion, Toggle */a
+
+.accordion-title,
+.toggle-title {
+    display: block;
+    color: #222222;
+    background: var(--body-bg);
+    font-family: Helvetica, sans-serif;
+    margin: 0 25%;
+    padding: 10px 0;
+    border: 1px solid var(--border-color);
+    cursor: pointer;
+}
+
+.accordion-title::before,
+.toggle-title::before {
+    content: '+';
+    display: inline-block;
+    color: var(--theme-color);
+    width: 34px;
+    text-align: center;
+}
+
+.accordion-content,
+.toggle-content {
+    padding: 10px 5px;
+    margin: 0 calc(25% + 2em);
+}
+
+.active-toggle,
+.active-accordion {
+    color: var(--theme-color);
+}
+
+
+/* Elements -> Slider */
+#slider {
+	width: 100vw !important;
+    height: 100vh !important;
+    object-fit: cover;
+    outline: 1px solid red !important;
+}
+.slider-container {
+	width: 100vw !important;
+    height: 100vh !important;
+    object-fit: cover;
+    object-position: 50% 50%;
+    outline: 1px solid blue !important;
+}
+.home-slider {
+	width: 100vw !important;
+    height: 100vh !important;
+    object-fit: cover;
+    object-position: 50% 50%;
+    outline: 1px solid green !important;
+}
+.slider-item {
+	width: 100vw !important;
+    height: 100vh !important;
+    object-fit: cover;
+    object-position: 50% 50%;
+    outline: 1px solid orange !important;
+}
+.slider-img {
+    width: 100vw !important;
+    height: 100vh !important;
+    object-fit: cover;
+    object-position: 50% 50%;
+    outline: 1px solid yellow !important;
+}
+.slider .owl-nav.disabled + .owl-dots {
+    margin-top: -10vh;
+}
+
+.owl-dots button.owl-dot {
+	width: 15px;
+	height: 15px;
+	background: #000;
+}
+
+.owl-carousel .animated {
+	animation-duration: 0.5s;
+	animation-fill-mode: both;
+}
+
+.layer1,
+.layer2,
+.layer3,
+.layer4,
+.layer5,
+.layer6 {
+	color: #fff;
+    font-weight: bold;
+    /* -webkit-text-fill-color: #fff;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #000; */
+	/* visibility: visible;
+	opacity: 0; */
+	-webkit-transition: all ease 0.5s;
+	-moz-transition: all ease 0.5s;
+	transition: all ease 0.5s;
+}
+.active .layer1 {
+	-webkit-transition-delay: 0.5s;
+	-moz-transition-delay: 0.5s;
+	transition-delay: 0.5s;
+}
