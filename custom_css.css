@@ -265,6 +265,17 @@ a.feat:hover {
 
 /* Elements -> Slider */
 
+.owl-carousel .owl-item img {
+	display: block;
+	height: 100%;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    object-fit: cover;
+}
+
 .owl-carousel .owl-stage {
     display: flex;
     align-items: center;
