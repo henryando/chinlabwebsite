@@ -29,6 +29,8 @@
     {% endif %}
   </div> {# /.container #}
 </div>{# /main-wrapper #}
+      {# animateOut: '{{ slider_animateout }}', #}
+      {# animateIn: '{{ slider_animatein }}', #}
 {% if animated_sidebar_option %}
   {% include '@milipro/template-parts/sidebar_sliding.html.twig' %}
 {% endif %}
@@ -43,8 +45,6 @@
       autoplayTimeout: {{ slider_time }},
       nav: true,
       dots: {{ slider_dots }},
-      animateOut: '{{ slider_animateout }}',
-      animateIn: '{{ slider_animatein }}',
     });
     var windowwidth = $(window).width();
     var headermainheight = $('.header-main').outerHeight();

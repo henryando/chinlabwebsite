@@ -330,18 +330,17 @@ a.feat:hover {
 }
 .slider .owl-nav .owl-prev span {
     position: relative;
-    right: 20vw;
+    right: 300px;
 }
 .slider .owl-nav .owl-next span {
     position: relative;
-    left: 20vw;
+    left: 300px;
 }
 
 .slider .owl-dots button.owl-dot {
     position: relative;
-    top: calc(-100px - 35px);
+    top: -135px;
 } 
-
 
 /* nav button styling  */
 .owl-nav .owl-prev span,
@@ -366,7 +365,26 @@ a.feat:hover {
     background: #000;
 }
 
+/* Fix formatting on small screens  */
 
+@media only screen and (max-width: 768px) {
+    .slider .owl-nav {
+        visibility: hidden;
+    }
+    .owl-dots button.owl-dot {
+        width: 25px;
+        height: 25px;
+        border-radius: 50%;
+        border: 2px solid var(--border-color);
+        background: #000;
+    }
+    .owl-carousel .owl-nav {
+        visibility: hidden;
+    }
+}
+
+
+/* Make animation faster */
 
 .owl-carousel .animated {
     animation-duration: 0.5s;
@@ -475,3 +493,19 @@ button,
     -webkit-transition: all 0.1s ease;
     transition: all 0.1s ease;
 }
+
+
+/* Add one-five env */
+
+/* .one-five, .two-five {
+  position: relative;
+  float: left;
+  margin: 0;
+  padding: 10px 15px;
+}
+.one_five {
+  width: 20%;
+}
+.two-five {
+    width: 40%;
+} */
