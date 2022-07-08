@@ -1,10 +1,10 @@
 /* Change all fonts to Helvetica */
 html {
-    font-size: 16px;
+    font-size: 17px;
 }
 
 body {
-    font-size: 16px;
+    font-size: 17px;
 }
 
 h1,
@@ -53,7 +53,7 @@ ul.main-menu {
 
 .sidebar {
     font-family: Helvetica, sans-serif;
-    text-align: center;
+    text-align: left;
 }
 
 .icon-box,
@@ -166,14 +166,16 @@ ul.main-menu ul.submenu li {
 
 .sidebar .block {
     margin-bottom: 20px;
-
-
-    padding: 10px;
+    padding: 15px;
     border-radius: 5px;
     background: var(--sidebar-bg);
     border: 2px solid var(--border-color);
     -webkit-box-shadow: 3px 3px var(--theme-color);
     box-shadow: 3px 3px var(--theme-color);
+}
+
+.sidebar > p {
+    text-indent: 40px;
 }
 
 
@@ -509,3 +511,4 @@ button,
 .two-five {
     width: 40%;
 } */
+
