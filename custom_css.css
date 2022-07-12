@@ -548,7 +548,7 @@ ul.tabs li {
 }
 
 ul.tabs li a {
-    padding: 6px 20px;
+    padding: 12px 20px 8px 20px;
     text-decoration: none !important;
     margin-bottom: 0px;
 }
@@ -562,7 +562,7 @@ ul.tabs li a {
     border-top: none;
     border-radius: 5px 5px 0px 0px;
     border: none;
-    border-bottom: 6px solid var(--theme-color);
+    border-bottom: 4px solid var(--theme-color);
     background-color: var(--sidebar-bg);
     margin-bottom: 0px;
 }
@@ -577,4 +577,74 @@ ul.tabs li a {
 
 .active-tab-content {
     display: block;
+}
+
+
+/* Grid for affiliations and sponsors  */
+
+.affrow {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+}
+.affcol img,
+.affcol2 img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+    height: auto;
+}
+
+/* For mobile  */
+.affcol {
+    flex: 50%;
+    max-width: 50%;
+    padding: 0 4px;
+}
+.affcol2 {
+    flex: 100%;
+    max-width: 100%;
+    padding: 0 4px;
+}
+
+/* For desktop  */
+@media screen and (min-width: 768px) {
+    .affcol {
+        flex: 16.6%;
+        max-width: 16.6%;
+    }
+    .affcol2 {
+        flex: 33.3%;
+        max-width: 33.3%;
+    }
+}
+
+/* Ultracold gallery divs  */
+
+.galrow {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+}
+.galcol img,
+.galcol img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+    height: auto;
+}
+
+/* For mobile  */
+.galcol {
+    flex: 100%;
+    max-width: 100%;
+    padding: 0 4px;
+}
+
+/* For desktop  */
+@media screen and (min-width: 768px) {
+    .galcol {
+        flex: 33.3%;
+        max-width: 33.3%;
+    }
 }
