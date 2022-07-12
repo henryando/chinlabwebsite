@@ -563,8 +563,12 @@ ul.tabs li a {
     border-radius: 5px 5px 0px 0px;
     border: none;
     border-bottom: 4px solid var(--theme-color);
-    background-color: var(--sidebar-bg);
+    background-color: none;
     margin-bottom: 0px;
+}
+
+ul.tabs li a:hover {
+    background-color: var(--sidebar-bg);
 }
 
 .tab-content {
