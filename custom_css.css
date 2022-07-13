@@ -1,4 +1,5 @@
-/* Change all fonts to Helvetica */
+/* Set all fonts to Helvetica  */
+
 html {
     font-size: 17px;
 }
@@ -65,6 +66,7 @@ ul.main-menu {
 .toggle-title {
     font-family: Helvetica, sans-serif;
 }
+
 
 
 /* Table formatting things, including groupmeeting table */
@@ -138,22 +140,85 @@ h6 {
     font-size: 1.25em;
 }
 
-/* Define img classes for the people section  */
+/* All the formatting for the people page!  */
 
 /* For peoples faces */
 img.ppl {
-    width: 15em;
-    height: 15em;
+    width: 230px;
+    height: 230px;
     object-fit: cover;
     border-radius: 5px;
 }
 
 /* For favorite figures */
-img.fav {
-    width: 15em;
-    height: 15em;
+/* img.fav {
+    width: 100%;
+    height: auto;
     object-fit: cover;
-    border-radius: 5px;
+    border-radius: 50px;
+} */
+
+/* Tooltip container */
+.person {
+    position: relative;
+    display: inline-block;
+}
+
+/* Tooltip text */
+.person .favfig {
+    vertical-align: middle;
+    visibility: hidden;
+    width: 220px;
+    height: 220px;
+    background-color: var(--sidebar-bg);
+    text-align: center;
+    border-radius: 50px;
+    border: 3px solid var(--border-color);
+    padding: 10px;
+    
+    /* Position the tooltip text - see examples below! */
+    position: absolute;
+    z-index: 1000;
+    
+    bottom: 120%;
+    left: 50%;
+    margin-left: -110px; /* Use half of the width (120/2 = 60), to center the tooltip */
+
+    align-items: center;
+    justify-content: center;
+}
+
+.favfig:after {
+    content:"";
+    background-color: var(--sidebar-bg);
+    border-radius: 50%;
+    display: block;
+    position: absolute;
+    z-index: 999;
+    border: 3px solid var(--border-color);
+}
+.favfig:after {
+    bottom: -40px;
+    right: 75px;
+    width: 30px;
+    height: 30px;
+    box-shadow: -28px -6px 0 -3px var(--sidebar-bg),
+    -24px 20px 0 -6px var(--sidebar-bg),
+    -3px 28px 0 -9px var(--sidebar-bg),
+    -28px -6px 0 0px var(--border-color),
+    -24px 20px 0 -3px var(--border-color),
+    -3px 28px 0 -6px var(--border-color);
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.person:hover .favfig {
+    visibility: visible;
+}
+
+.favfig img {
+    width: 180px;
+    height: 180px;
+    object-fit: contain;
 }
 
 /* Remove the ugly border between menu items  */
@@ -680,3 +745,4 @@ ul.tabs li a:hover {
     position: relative;
     width: 100%;
 }
+
