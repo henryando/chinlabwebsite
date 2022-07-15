@@ -719,30 +719,10 @@ ul.tabs li a:hover {
 }
 
 
-/* News class  */
+/* Image default formatting */
 
-.news {
-    display: block;
-    width: 100%;
-    margin-bottom: 20px;
-    padding: 15px;
+img {
+    margin: 10px;
     border-radius: 5px;
-    background: var(--sidebar-bg);
-    border: 2px solid var(--border-color);
-    -webkit-box-shadow: 3px 3px var(--theme-color);
-    box-shadow: 3px 3px var(--theme-color);
+    width: 90%;
 }
-.news h5 {
-    font-size: 1em;
-    color: var(--theme-color-two);
-}
-.news img {
-    width: 100%;
-    max-width: 575px;
-    height: auto;
-    border-radius: 5px;
-    display: block;
-    position: relative;
-    width: 100%;
-}
-
