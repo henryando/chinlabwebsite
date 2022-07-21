@@ -1,0 +1,56 @@
+/* Fix formatting on small screens  */
+
+@media only screen and (max-width: 767px) {
+    .slider .owl-nav {
+        visibility: hidden;
+    }
+    .owl-dots button.owl-dot {
+        width: 25px;
+        height: 25px;
+        border-radius: 50%;
+        border: 2px solid var(--border-color);
+        background: #000;
+    }
+    .owl-carousel .owl-nav {
+        visibility: hidden;
+    }
+}
+
+
+@media only screen and (max-width: 767px) {
+    .active-menu ul.main-menu ul.submenu li {
+        text-align: left;
+        margin-left: 40px;
+        width: calc(100% - 50px);
+    }
+    .active-menu ul.main-menu li {
+        border: none;
+    }
+    .active-menu ul.main-menu li a {
+        border-bottom: none !important
+    }
+    .active-menu ul.main-menu ul.submenu li a {
+        border-bottom: none !important
+    }
+}
+
+
+/* For desktop  */
+@media screen and (min-width: 768px) {
+    .affcol {
+        flex: 16.6%;
+        max-width: 16.6%;
+    }
+    .affcol2 {
+        flex: 33.3%;
+        max-width: 33.3%;
+    }
+}
+
+/* For desktop  */
+@media screen and (min-width: 768px) {
+    .galcol {
+        flex: 33.3%;
+        max-width: 33.3%;
+    }
+}

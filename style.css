@@ -1,27 +1,20 @@
 /**
  * Variables
- * MODIFIED BY HENRY
  */
-:root {
-  --theme-color: #800000;
-  --theme-color-two: #b0b0b0;
-  --body-bg: #fafaf9;
-  --sidebar-bg: #f5f2ed;
+ :root {
+  --theme-color: #d1392b;
+  --theme-color-two: #841309;
+  --body-bg: #fcfbf8;
+  --sidebar-bg: #ffffff;
   --body-color: #404040;
   --bold-color: #191919;
-  --border-color: #cccccc;
+  --border-color: #d6d6d6;
   --link-hover: #111111;
   --button-hover: #222222;
   --footer-bg: #3a3e47;
   --footer-border: #7d818a;
-  --light: #f0f0f0;
+  --light: #f5f2ed;
 }
-
-/**
- * END HENRY MOD
- */
-
-
 
 /**
  * html and body.
@@ -3461,7 +3454,7 @@ nav.pager::before, nav.pager::after,
 
 
 
-/***** HENRY ADDITION ******/
+/* ***** HENRY ADDITION ***** */
 
 /* Set all fonts to Helvetica  */
 
@@ -3897,24 +3890,6 @@ a.feat:hover {
   background: #000;
 }
 
-/* Fix formatting on small screens  */
-
-@media only screen and (max-width: 768px) {
-  .slider .owl-nav {
-      visibility: hidden;
-  }
-  .owl-dots button.owl-dot {
-      width: 25px;
-      height: 25px;
-      border-radius: 50%;
-      border: 2px solid var(--border-color);
-      background: #000;
-  }
-  .owl-carousel .owl-nav {
-      visibility: hidden;
-  }
-}
-
 
 /* Make animation faster */
 
@@ -4042,23 +4017,6 @@ button,
   width: 40%;
 } */
 
-@media only screen and (max-width: 767px) {
-  .active-menu ul.main-menu ul.submenu li {
-      text-align: left;
-      margin-left: 40px;
-      width: calc(100% - 50px);
-  }
-  .active-menu ul.main-menu li {
-      border: none;
-  }
-  .active-menu ul.main-menu li a {
-      border-bottom: none !important
-  }
-  .active-menu ul.main-menu ul.submenu li a {
-      border-bottom: none !important
-  }
-}
-
 
 /* Tab */
 
@@ -4141,17 +4099,7 @@ ul.tabs li a:hover {
   padding: 0 4px;
 }
 
-/* For desktop  */
-@media screen and (min-width: 768px) {
-  .affcol {
-      flex: 16.6%;
-      max-width: 16.6%;
-  }
-  .affcol2 {
-      flex: 33.3%;
-      max-width: 33.3%;
-  }
-}
+
 
 /* Ultracold gallery divs  */
 
@@ -4175,13 +4123,7 @@ ul.tabs li a:hover {
   padding: 0 4px;
 }
 
-/* For desktop  */
-@media screen and (min-width: 768px) {
-  .galcol {
-      flex: 33.3%;
-      max-width: 33.3%;
-  }
-}
+
 
 
 /* Image default formatting */
@@ -4192,5 +4134,14 @@ img {
   width: 90%;
 }
 
+.owl-item img {
+  margin: 0px;
+  border-radius: 0px;
+}
 
-/***** END HENRY ADDITION ******/
+.slider-img img {
+  border-radius: 0px;
+}
+
+
+/* ***** END HENRY ADDITION ***** */
