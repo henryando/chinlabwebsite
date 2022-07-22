@@ -54,3 +54,11 @@
         max-width: 33.3%;
     }
 }
+
+
+/* New additions  */
+.site-branding img {
+    width: auto;
+    max-height: 80px;
+    border-radius: 0px;
+}
