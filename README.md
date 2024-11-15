@@ -1,0 +1,3 @@
+# Chinlab Website 
+
+This is HTML, CSS, and some small amount of Javascript code for the Chinlab website. The website itself is built on Drupal with the Milipro package. My code here is just for content and additional customization. The website update project occurred mainly during the summer of 2022. The website can be found at [ultracold.uchicago.edu/ultracold](https://ultracold.uchicago.edu). HTML files are generally for page content, and CSS files are generally modifications of the Milipro theme.
