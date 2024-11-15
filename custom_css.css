@@ -181,7 +181,7 @@ img.ppl {
     z-index: 1000;
     
     bottom: 120%;
-    left: 50%;
+    left: 50%;  
     margin-left: -110px; /* Use half of the width (120/2 = 60), to center the tooltip */
 
     align-items: center;
@@ -327,6 +327,13 @@ a.feat:hover {
 .feature:hover a,
 .service:hover a {
     color: var(--theme-color);
+}
+
+
+/* Call to action */
+.call-to-action {
+    background: var(--border-color);
+    border-radius: 5px;
 }
 
 
@@ -594,7 +601,7 @@ ul.tabs li a {
     border: none;
     border-bottom: 4px solid var(--theme-color);
     background-color: none;
-    margin-bottom: 0px;
+    margin-bottom: 1px;
 }
 
 ul.tabs li a:hover {

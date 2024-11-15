@@ -641,6 +641,8 @@ th a {
 td {
   padding: 5px 10px;
   border: 2px solid var(--border-color);
+  background: var(--light);
+  color: var(--body-color);
 }
 
 /**
@@ -4143,5 +4145,7 @@ img {
   border-radius: 0px;
 }
 
+
+.tai-menu-item
 
 /* ***** END HENRY ADDITION ***** */
